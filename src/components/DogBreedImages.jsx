@@ -17,7 +17,7 @@ export default function DogBreedImages (props) {
         </div>
 		This page will show images of the { breed } breed
 		  <div>
-    	  { images && images.map(url => <img src={ url } alt="Dog" />) }
+    	  { images && images.map(url => <img src={ url } alt="Dog"  style={{maxHeight: '8rem'}}/>) } {/** I used inline styling here */}
   	      { !images && 'Loading...' }
 	    </div>
     </div>
